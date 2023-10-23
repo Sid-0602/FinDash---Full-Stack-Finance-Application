@@ -9,7 +9,7 @@ router.get("/kpis", async(req, res) => {
         res.status(200).json(kpis); //send kpi obj to client.
 
     }catch{
-        res.status(404).json({message: error.message});
+        res.status(404);
     }
 });
 
